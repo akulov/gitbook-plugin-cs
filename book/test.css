@@ -1,3 +1,18 @@
-body {
-    background: red;
+section  {
+    width:100%;
+}
+h1 {
+  color: #2674BA;
+}
+h2 {
+  color: #0099CC;
+}
+h3 {
+  color: #F77A0B;
+}
+h4 {
+  color: rgb(102,45,145);
+}
+h5 {
+  color: #444444;
 }
