@@ -1,9 +1,19 @@
-GitBook Sample Plugin
+GitBook Plugin - ComScore Theme
 ==============
 
-This is a sample plugin for GitBook.
+This is a plugin for Gitbook that uses the comScore color scheme.
 
-Install it using: ```$ npm install gitbook-plugin```
+Install it using: ```$ npm install gitbook-theme-comscore```
+
+Add to a Gitbook by including the following in `book.json`.
+
+```
+{
+"plugins": [
+        "comscore"
+    ]
+}
+```
 
 ## How GitBook plugin works?
 
