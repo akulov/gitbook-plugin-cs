@@ -3,16 +3,22 @@ GitBook Plugin - ComScore Theme
 
 This is a plugin for Gitbook that uses the comScore color scheme.
 
-Install it using: ```$ npm install gitbook-theme-comscore```
+~~Install it using: ```$ npm install gitbook-plugin-theme-comscore```~~
 
 Add to a Gitbook by including the following in `book.json`.
 
-```
+``` json
 {
 "plugins": [
-        "comscore"
+        "theme-comscore"
     ]
 }
+```
+
+Then run the following script:
+``` bash
+npm i -g gitbook-cli // maybe need sudo permission
+gitbook install
 ```
 
 ## How GitBook plugin works?
@@ -23,9 +29,9 @@ A plugin for GitBook is a node package that can be published on [NPM](http://www
 
 #### name
 
-The package name should begin with ```gitbook-plugin-```. And if your plugin is a theme, it should begin with ```gitbook-theme-```.
+The package name should begin with ```gitbook-plugin-```. And if your plugin is a theme, it should begin with ```gitbook-plugin-theme-```.
 
-Examples: `gitbook-plugin-mixpanel`, `gitbook-plugin-googleanalytics`, `gitbook-theme-dark`
+Examples: `gitbook-plugin-mixpanel`, `gitbook-plugin-googleanalytics`, `gitbook-plugin-theme-dark`
 
 #### engine
 
@@ -105,4 +111,3 @@ Map of "name" -> Function that needs to be called during build process. With nam
 * "finish": after generation and everything is finished
 
 Each hook can return a promise.
-
